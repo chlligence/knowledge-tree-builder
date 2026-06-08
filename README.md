@@ -24,12 +24,12 @@ npm run dev
   - [ ] 二级子任务
     - [ ] 三级子任务
   - [x] 另一个二级子任务
-
+```
 
 
 ## 技术架构
 
-```
+
 Vue 3 (Composition API + Script Setup)
 ├── App.vue             主组件：布局、状态、快捷键
 ├── parser.js           Markdown 解析器
