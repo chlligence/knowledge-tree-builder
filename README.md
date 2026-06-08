@@ -37,7 +37,7 @@ Vue 3 (Composition API + Script Setup)
 ├── defaults.js         默认示例数据
 └── style.css           设计系统（CSS 自定义属性）
 
-### 使用技巧
+## 使用技巧
 
 核心技巧:  #+特性
 详细请参考文档说明.md
