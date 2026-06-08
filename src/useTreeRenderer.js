@@ -329,7 +329,7 @@ export function useTreeRenderer(containerRef, treeData) {
       const radius = Math.max(5, 8 - d.depth * 0.5)
 
       // Glow rings for priority:high — animated pulse + static glow
-      if (isPriorityHigh) {
+      if (isPriorityHigh && !isCompleted) {
         // Animated pulsing ring
         node.append('circle')
           .attr('class', 'priority-pulse-ring')
@@ -350,13 +350,15 @@ export function useTreeRenderer(containerRef, treeData) {
       }
 
       // Main circle
-      node.append('circle')
+      const mainCircle = node.append('circle')
         .attr('r', radius)
         .attr('fill', fillColor)
         .attr('stroke', strokeColor)
         .attr('stroke-width', strokeWidth)
-        .attr('filter', 'url(#node-shadow)')
-        .style('transition', 'all 0.25s ease')
+
+      if (!isCompleted) {
+        mainCircle.attr('filter', 'url(#node-shadow)')
+      }
 
       // Checkmark for completed
       if (isCompleted) {
