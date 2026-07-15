@@ -1,5 +1,5 @@
 # 知识树构建器
-ClaudeCode vibevoding的知识树构建树,通过出文本缩进层级关系动,快速动态构建横向树状图
+ClaudeCode vibevoding 的知识树构建树,通过简单文本缩进层级关系,动态快速构建横向树状图
 
 ## 快速开始
 
